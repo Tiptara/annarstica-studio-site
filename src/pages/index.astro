@@ -1,0 +1,118 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Primary Meta Tags -->
+    <title>Annarstica Studio — Stories that linger, from satire to bedtime.</title>
+    <meta name="title" content="Annarstica Studio — Stories that linger, from satire to bedtime.">
+    <meta name="description" content="Explore Annarstica Studio, an independent publisher of darkly funny work-life fiction, heartfelt children’s books, and thoughtful storytelling across genres.">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Annarstica, Vivian Sims, Taylor C. Joy, work-life fiction, satirical stories, children's books, indie publishing, AI satire, short stories, modern work culture, bedtime stories, reflective fiction">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studio.annarstica.com/">
+    <meta property="og:title" content="Annarstica Studio — Stories that linger, from bedtime to beyond.">
+    <meta property="og:description" content="Explore Annarstica Studio, an independent publisher of darkly funny work-life fiction, heartfelt children’s books, and thoughtful storytelling across genres.">
+    <meta property="og:image" content="https://studio.annarstica.com/images/annarstica-cover-1200x630.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://studio.annarstica.com/">
+    <meta name="twitter:title" content="Annarstica Studio — Stories that linger, from bedtime to beyond.">
+    <meta name="twitter:description" content="Explore Annarstica Studio, an independent publisher of darkly funny work-life fiction, heartfelt children’s books, and thoughtful storytelling across genres.">
+    <meta name="twitter:image" content="https://studio.annarstica.com/images/annarstica-cover-1200x630.jpg">
+
+    <!-- favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Hero Section -->
+      <section style="text-align: center; padding: 4rem 1rem;">
+        <h1>Welcome to Annarstica Studio</h1>
+        <p style="max-width: 600px; margin: 1rem auto;">
+          A quiet creative space where stories meet soul — from satirical reflections to gentle affirmations.  
+          Here, we gather works by writers who stay curious, stay kind, and sometimes... stay too long.
+        </p>
+
+      </section>
+
+      <!-- Vivian Sims Section -->
+      <section style="padding: 2rem 1rem; border-top: 1px solid #eee;">
+        <h2>Vivian Sims</h2>
+        <p>
+          Author of the <strong>We Stayed Anyway</strong> series – a collection of dark comedy short stories about burnout, quiet quitting, and bittersweet survival in the modern workplace.
+        </p>
+        <p>
+          <a href="https://viviansims.carrd.co" target="_blank" class="link-button">Explore Vivian's Works</a>
+        </p>
+      </section>
+
+      <!-- Taylor C. Joy Section -->
+      <section style="padding: 2rem 1rem; border-top: 1px solid #eee;">
+        <h2>Taylor C. Joy</h2>
+        <p>
+          Writes stories of hope and resilience for little readers and big hearts alike.  
+          Her gentle books help young minds grow with confidence.
+        </p>
+        <p>
+          <a href="https://www.facebook.com/AuthorTaylorCJoy/" target="_blank" class="link-button">Follow Taylor</a>
+        </p>
+      </section>
+
+      <!-- Footer Note -->
+      <section style="text-align: center; padding: 2rem 1rem; border-top: 1px solid #eee;">
+        <p>
+          More books are coming soon. Follow us to stay updated.  
+          This is Annarstica — where writing feels like coming home.
+        </p>
+      </section>
+
+			<!-- about -->
+			<section style="background: var(--color-background-section); padding: 3rem 1.5rem; color: var(--text-body);">
+				<div class="container" style="max-width: 720px; margin: 0 auto;">
+
+    		<h2 style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 1rem;">About Annarstica</h2>
+    		<p style="line-height: 1.8;">
+      		<strong>Annarstica</strong> is an indie publisher specializing in short stories that reflect the bittersweet, bizarre, and brutally relatable realities of work and life. Our focus is on emotionally intelligent storytelling, sharp satire, and giving voice to the quietly tired.
+    		</p>
+    		<p style="line-height: 1.8;">
+					Our works are often strange, often sharp, and always honest — whether it’s a burnt-out prompt engineer, a misused AI dashboard,
+					or a woman who never found a shirt that fit in IT. You’ll find both truth and absurdity here. 
+					Because sometimes, fiction tells the truth better than facts ever could.
+    		</p>
+  </div>
+</section>
+    </main>
+    <Footer />
+  </body>
+	<style>
+		.link-button{
+			display:inline-block; 
+			margin-top: 0.5rem; 
+			background: var(--color-button); 
+			color: white; 
+			padding: 0.5rem 1rem; 
+			border-radius: 4px;
+		}
+		.link-button:hover {
+			background: var(--color-hover); /* หรือจะใช้สีอื่นที่ตัดกัน */
+			color: white;
+		}
+	</style>
+</html>
