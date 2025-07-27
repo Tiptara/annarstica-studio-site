@@ -9,7 +9,7 @@ export default defineConfig({
 	site: 'https://studio.annarstica.com',
 	integrations: [mdx(),
 		sitemap({
-			filter: (page) => !page.includes('/pages-draft/')
+			filter: (page) => !page.includes('/src-back/')
 		}),
 	  ],
 });

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && rm -rf dist/pages-back",
+    "build": "astro build && rm -rf dist/src-back",
     "preview": "astro preview",
     "astro": "astro"
   },

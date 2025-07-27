@@ -1,0 +1,119 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<div class="nav-container">
+		<nav>
+		<div class="nav-left" style="display: flex; align-items: center;">
+			<a href="/" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+				<img src="/logo-annarstica.png" alt="Annarstica" style="height: 50px; margin-left: 0px;"/>
+				<span class="brand-name">Annarstica</span>
+				<span class="brand-sub">Studio</span>
+			</a>
+		</div>
+		<div class="nav-right">
+				<div class="internal-links">
+					<HeaderLink href="/about">About</HeaderLink>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+<style>
+
+.brand-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+.brand-sub {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; /* Light */
+	padding-left: 5px;
+}
+
+	header {
+		margin: 0;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	h2 {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+	nav {
+		height: 80px;
+		display: flex;
+		padding: 0px 10px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav a {
+		padding: 1em 0em;
+		color: var(--black);
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+	}
+
+	.nav-bar {
+  display: flex;
+  /*lign-items: center;*/
+  justify-content: space-between;
+
+}
+
+.nav-left h2 a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+.nav-left {
+  display: flex;
+  align-items: baseline; 
+  gap: 0.5rem;
+}
+.nav-left h2 a:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+.nav-right {
+  display: flex;
+  align-items: center; 
+  margin-left: auto;
+}
+.nav-right a {
+  font-size: 0.95rem;
+}
+
+.nav-container {
+	display: flex;
+  justify-content: space-between;
+  max-width: 720px;  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem 2rem;
+}
+
+	.social-links,
+	.social-links a {
+		display: flex;
+	}
+	@media (max-width: 720px) {
+		.social-links {
+			display: none;
+		}
+	}
+</style>
