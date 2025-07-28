@@ -39,7 +39,14 @@ const { title, description, image = FallbackImage, keywords} = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&family=Lato:wght@300&display=swap" rel="stylesheet" />
+<link rel="preload" href="/fonts/inter-v19-latin-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/inter-v19-latin-600.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/inter-v19-latin-700.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/poppins-v23-latin-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/poppins-v23-latin-600.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/lato-v24-latin-regular.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/lato-v24-latin-300.woff" as="font" type="font/woff" crossorigin />
+<link rel="preload" href="/fonts/lato-v24-latin-700.woff" as="font" type="font/woff" crossorigin />
 <link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
 <link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
 
